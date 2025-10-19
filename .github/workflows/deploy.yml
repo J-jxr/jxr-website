@@ -1,0 +1,37 @@
+# 工作流名称（随便起，比如“自动部署网站”）
+name: Auto Deploy Docusaurus Site
+
+# 触发条件：当代码推送到 master 分支时，启动机器人
+on:
+  push:
+    branches: [ master ]  # 你的源码分支是 master，这里对应写 master
+
+# 要执行的任务
+jobs:
+  deploy:
+    # 机器人在 Ubuntu 系统上干活（稳定通用）
+    runs-on: ubuntu-latest
+
+    # 具体干活步骤
+    steps:
+      # 第一步：把 GitHub 仓库的源码拉到机器人的服务器上
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 第二步：在机器人服务器上安装 Node.js（和你本地的版本匹配，比如 22.x）
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'  # 你的 Node 版本是 v22.14.0，这里写 22 就行
+
+      # 第三步：安装依赖（类似你本地的 npm install）
+      - name: Install dependencies
+        run: npm install
+
+      # 第四步：执行部署命令（机器人帮你跑 npm run deploy）
+      - name: Deploy to GitHub Pages
+        run: npm run deploy
+        # 给部署命令传环境变量（用之前创建的 Secrets）
+        env:
+          GIT_USER: ${{ secrets.GH_NAME }}  # 从 Secrets 里取 GH_NAME
+          GIT_PASS: ${{ secrets.GH_TOKEN }}  # 从 Secrets 里取 GH_TOKEN
