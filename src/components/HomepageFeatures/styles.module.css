@@ -1,0 +1,21 @@
+/* 个人博客特色展示区域样式 */
+.features {
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+  width: 100%;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+/* 特色卡片图标样式 */
+.featureSvg {
+  height: 180px;
+  width: 180px;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+/* 图标悬停效果 */
+.featureSvg:hover {
+  transform: scale(1.05);
+}
