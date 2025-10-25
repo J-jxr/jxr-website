@@ -4,10 +4,17 @@
         <title>JXR's Blog Blog</title>
         <link>https://J-jxr.github.io/jxr-website/blog</link>
         <description>JXR's Blog Blog</description>
-        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 24 Oct 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-Hans</language>
+        <item>
+            <title><![CDATA[使用U盘安装Ubuntu系统]]></title>
+            <link>https://J-jxr.github.io/jxr-website/blog/intallUbuntuOS</link>
+            <guid>https://J-jxr.github.io/jxr-website/blog/intallUbuntuOS</guid>
+            <pubDate>Fri, 24 Oct 2025 00:00:00 GMT</pubDate>
+            <category>Operating System</category>
+        </item>
         <item>
             <title><![CDATA[Welcome]]></title>
             <link>https://J-jxr.github.io/jxr-website/blog/welcome</link>
@@ -27,7 +34,7 @@
 <p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://j-jxr.github.io/jxr-website/assets/images/docusaurus-plushie-banner-a60f7593abca1e3eef26a9afa244e4fb.jpeg" width="1500" height="500" class="img_ev3q"></p>
 <p>The blog supports tags as well!</p>
 <p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content:encoded>
-            <category>Facebook</category>
+            <category>facebook</category>
             <category>Hello</category>
             <category>Docusaurus</category>
         </item>
