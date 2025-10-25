@@ -1,7 +1,3 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
 
 hello:
   label: Hello
@@ -17,3 +13,8 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+operating-system:
+  label: Operating System
+  permalink: /operating-system
+  description: Operating System tag description
